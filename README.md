@@ -17,10 +17,12 @@ To allow authentication you first need to register your application at Azure App
   Write down the value of the client secret created now. It will be hidden later on.
 	
 7 Under Api Permissions:
+
 When authenticating "on behalf of a user":
       add the delegated permissions for Microsoft Graph you want (see scopes)
       it is highly recommended to add "offline_access" permission. If not the user you will have to re-authenticate every hour.
-    When authenticating "with your own identity":
+      
+When authenticating "with your own identity":
       add the application permissions for Microsoft Graph you want
       click on the Grant Admin Consent button (if you have admin permissions) or wait until the admin has given consent to your application
 			
